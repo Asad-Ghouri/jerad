@@ -26,7 +26,7 @@ const AnalyzerMain = () => {
                     <div> <b> Upload your CV (résumé)</b> </div>
                     <div className="noC-nw6"> {selectedFile ? selectedFile.name : 'NO CVS UPLOADED YET'} </div>
 
-                    <p className="text-3aq">To get the most out of our platform, uploading your CV is important. Here's why:<br/> </p>
+                    <p className="text-3aq">To get the most out of our platform, uploading your CV is important. Here&apos;s why:<br/> </p>
                     <ul>
                         <li><b>Automate your applications</b> by having your CV automatically attached to emails sent to companies.</li>
                         <li><b>Apply directly</b> to online forms effortlessly.</li>
