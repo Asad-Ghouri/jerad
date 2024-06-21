@@ -108,7 +108,7 @@ const list: {
   },
   {
     name: "Sean",
-    text: "Just purchased and cloned and *holy shit!* I realllyyy like what I'm seeing here!",
+    text: "This review emphasized LoopCV's ability to streamline job seeking into three steps: searching for jobs, setting up email templates, and adjusting loop settings. The automated job application process and integration with major job boards like LinkedIn and Indeed were praised, although the reviewer noted some limitations in the job level and experience filters​ ",
     type: refTypes.other,
   },
   {

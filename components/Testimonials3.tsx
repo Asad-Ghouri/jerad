@@ -15,19 +15,19 @@ const list: {
     // REQUIRED
     name: "Marc Lou",
     // REQUIRED
-    text: "Really easy to use. The tutorials are really useful and explains how everything works. Hope to ship my next project really fast!",
+    text: "One user found Achievemor ineffective, noting that while it matched them with many jobs, it didn't actually apply to any of them. Customer service was unhelpful, and the user experienced issues with the service and support calls",
     // Optional, a statically imported image (usually from your public folder—recommended) or a link to the person's avatar. Shows a fallback letter if not provided
     img: "https://pbs.twimg.com/profile_images/1514863683574599681/9k7PqDTA_400x400.jpg",
   },
   {
     username: "the_mcnaveen",
     name: "Naveen",
-    text: "Setting up everything from the ground up is a really hard, and time consuming process. What you pay for will save your time for sure.",
+    text: "Another user praised Achievemor as an interesting idea that automates market and matchmaking processes. This user believes the concept has potential and could grow if it builds market share quickly​ ",
   },
   {
     username: "wahab",
     name: "Wahab Shaikh",
-    text: "Easily saves 15+ hrs for me setting up trivial stuff. Now, I can directly focus on shipping features rather than hours of setting up the same technologies from scratch. Feels like a super power! :D",
+    text: "A review highlighted that LoopCV can simplify the job search process once you get the hang of it. It provides valuable features like AI-search automation, job status tracking, and a CV improver. The reviewer appreciated the free version that allows users to get acquainted with the platform before committing to a paid plan​",
   },
 ];
 
