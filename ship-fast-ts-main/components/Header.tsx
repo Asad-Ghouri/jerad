@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import ButtonSignin from "./ButtonSignin";
-import logo from "@/app/icon.png";
+// import logo from "@/app/icon.png";
 import config from "@/config";
 
 const links: {
@@ -50,11 +50,18 @@ const Header = () => {
             className="flex items-center gap-2 shrink-0"
             title={`${config.appName} homepage`}
           >
-            <Image
+            {/* <Image
               src={logo}
               alt={`${config.appName} logo`}
               className="w-8 h-8"
               priority={true}
+              width={32}
+              height={32}
+            /> */}
+            <img
+              src="https://accessai.asg.today/uploads/system/29eaedf7193718f69931e38f593c37fd.png"
+              alt={`${config.appName} logo`}
+              className="w-8 h-8"
               width={32}
               height={32}
             />
@@ -116,14 +123,21 @@ const Header = () => {
               className="flex items-center gap-2 shrink-0"
               title={`${config.appName} homepage`}
             >
-              <Image
+              {/* <Image
                 src={logo}
                 alt={`${config.appName} logo`}
                 className="w-8 h-8"
                 priority={true}
                 width={32}
                 height={32}
-              />
+              /> */}
+               <img
+              src="https://accessai.asg.today/uploads/system/29eaedf7193718f69931e38f593c37fd.png"
+              alt={`${config.appName} logo`}
+              className="w-8 h-8"
+              width={32}
+              height={32}
+            />
               <span className="font-extrabold text-lg">{config.appName}</span>
             </Link>
             <button

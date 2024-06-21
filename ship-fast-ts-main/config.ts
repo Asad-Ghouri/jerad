@@ -6,7 +6,7 @@ const config = {
   appName: "ShipFast",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
-    "The NextJS boilerplate with all you need to build your SaaS, AI tool, or any other web app.",
+    "Achievemor helps you get 3x more interviews using automation",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
   domainName: "shipfa.st",
   crisp: {
@@ -29,16 +29,21 @@ const config = {
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
         description: "Perfect for small projects",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 99,
+        price: 9,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 149,
+        priceAnchor: 9,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "up to 20 job title searches in parallel (loops) per month",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "up to 100 applications or emails per month" },
+          { name: "20 job boards" },
+          { name: "medium priority applications" },
+
+          { name: "search for remote jobs anywhere in the world" },
+          { name: "custom email address" },
+          { name: "LinkedIn apply extension" },
+
         ],
       },
       {
@@ -50,17 +55,19 @@ const config = {
         isFeatured: true,
         name: "Advanced",
         description: "You need more power",
-        price: 149,
-        priceAnchor: 299,
+        price: 14,
+        priceAnchor: 20,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "up to 50 job title searches in parallel (loops) per month",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "up to 300 applications or emails per month" },
+          { name: "20 job boards" },
+          { name: "high priority applications" },
+          { name: "search for remote jobs anywhere in the world" },
+          { name: "custom email address" },
+          { name: "LinkedIn apply extension" },
+
         ],
       },
     ],

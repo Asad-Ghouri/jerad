@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import config from "@/config";
-import logo from "@/app/icon.png";
+// import logo from "@/app/icon.png";
 
 // Add the Footer to the bottom of your landing page and more.
 // The support link is connected to the config.js file. If there's no config.mailgun.supportEmail, the link won't be displayed.
@@ -17,14 +17,21 @@ const Footer = () => {
               aria-current="page"
               className="flex gap-2 justify-center md:justify-start items-center"
             >
-              <Image
+              {/* <Image
                 src={logo}
                 alt={`${config.appName} logo`}
                 priority={true}
                 className="w-6 h-6"
                 width={24}
                 height={24}
-              />
+              /> */}
+               <img
+              src="https://accessai.asg.today/uploads/system/29eaedf7193718f69931e38f593c37fd.png"
+              alt={`${config.appName} logo`}
+              className="w-8 h-8"
+              width={32}
+              height={32}
+            />
               <strong className="font-extrabold tracking-tight text-base md:text-lg">
                 {config.appName}
               </strong>

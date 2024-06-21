@@ -50,7 +50,7 @@ const HeaderContent = () => {
             href="/"
             title={`${config.appName} homepage`}
           >
-            <Image
+            {/* <Image
               src={logo}
               alt={`${config.appName} logo`}
               className="w-8"
@@ -58,7 +58,15 @@ const HeaderContent = () => {
               priority={true}
               width={32}
               height={32}
+            /> */}
+             <img
+              src="https://accessai.asg.today/uploads/system/29eaedf7193718f69931e38f593c37fd.png"
+              alt={`${config.appName} logo`}
+              // className="w-8 h-8"
+              width={52}
+              height={52}
             />
+            
             <span className="font-extrabold text-lg">{config.appName}</span>
           </Link>
         </div>
@@ -117,7 +125,7 @@ const HeaderContent = () => {
               title={`${config.appName} homepage`}
               href="/"
             >
-              <Image
+              {/* <Image
                 src={logo}
                 alt={`${config.appName} logo`}
                 className="w-8"
@@ -125,7 +133,14 @@ const HeaderContent = () => {
                 priority={true}
                 width={32}
                 height={32}
-              />
+              /> */}
+               <img
+              src="https://accessai.asg.today/uploads/system/29eaedf7193718f69931e38f593c37fd.png"
+              alt={`${config.appName} logo`}
+              className="w-8 h-8"
+              width={72}
+              height={72}
+            />
               <span className="font-extrabold text-lg">{config.appName}</span>
             </Link>
             <button

@@ -13,22 +13,39 @@ interface FAQItemProps {
 
 const faqList: FAQItemProps[] = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    question: "What it is a Loop?",
+    answer: <div className="space-y-2 leading-relaxed">The first thing that you will learn in our platform is the "Loop". Find more about what we call a loop</div>,
   },
   {
-    question: "Can I get a refund?",
+    question: "Is there any limit on the number of applications?",
     answer: (
       <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
+        Learn more about the limits of job applications based on our pricing plans
       </p>
     ),
   },
   {
-    question: "I have another question",
+    question: "What is a variable in a email template?",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">How can you personalize your job applications over email? Find more about email variables</div>
+    ),
+  },
+  {
+    question: "How can I disable sending emails?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">If you want to pause your Loop for a couple of day find more details how you can do it</div>
+    ),
+  },
+  {
+    question: "Can I get a refund?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">Yes! You can get a refund anytime if your request meets the eligible criteria!</div>
+    ),
+  },
+  {
+    question: "How can I see my daily results?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">To see your daily job applications and email sent, you can either go in your overview tab or check each loop’s (each job search) results.</div>
     ),
   },
 ];
