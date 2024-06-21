@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import type { JSX } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
@@ -29,13 +29,10 @@ const links: {
 
 const cta: JSX.Element = <ButtonSignin extraStyle="btn-primary" />;
 
-// A header with a logo on the left, links in the center (like Pricing, etc...), and a CTA (like Get Started or Login) on the right.
-// The header is responsive, and on mobile, the links are hidden behind a burger button.
 const Header = () => {
   const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  // setIsOpen(false) when the route changes (i.e: when the user clicks on a link on mobile)
   useEffect(() => {
     setIsOpen(false);
   }, [searchParams]);
@@ -49,15 +46,14 @@ const Header = () => {
         {/* Your logo/name on large screens */}
         <div className="flex lg:flex-1">
           <Link
-            className="flex items-center gap-2 shrink-0 "
             href="/"
+            className="flex items-center gap-2 shrink-0"
             title={`${config.appName} homepage`}
           >
             <Image
               src={logo}
               alt={`${config.appName} logo`}
-              className="w-8"
-              placeholder="blur"
+              className="w-8 h-8"
               priority={true}
               width={32}
               height={32}
@@ -109,22 +105,21 @@ const Header = () => {
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
-      <div className={`relative z-50 ${isOpen ? "" : "hidden"}`}>
+      <div className={`fixed inset-0 z-50 ${isOpen ? "" : "hidden"}`}>
         <div
-          className={`fixed inset-y-0 right-0 z-10 w-full px-8 py-4 overflow-y-auto bg-base-200 sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300`}
+          className={`absolute inset-y-0 right-0 w-full px-8 py-4 bg-base-200 sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300`}
         >
           {/* Your logo/name on small screens */}
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between mb-6">
             <Link
-              className="flex items-center gap-2 shrink-0 "
-              title={`${config.appName} homepage`}
               href="/"
+              className="flex items-center gap-2 shrink-0"
+              title={`${config.appName} homepage`}
             >
               <Image
                 src={logo}
                 alt={`${config.appName} logo`}
-                className="w-8"
-                placeholder="blur"
+                className="w-8 h-8"
                 priority={true}
                 width={32}
                 height={32}
@@ -155,22 +150,17 @@ const Header = () => {
           </div>
 
           {/* Your links on small screens */}
-          <div className="flow-root mt-6">
-            <div className="py-4">
-              <div className="flex flex-col gap-y-4 items-start">
-                {links.map((link) => (
-                  <Link
-                    href={link.href}
-                    key={link.href}
-                    className="link link-hover"
-                    title={link.label}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <div className="divider"></div>
+          <div className="flex flex-col gap-y-4">
+            {links.map((link) => (
+              <Link
+                href={link.href}
+                key={link.href}
+                className="link link-hover"
+                title={link.label}
+              >
+                {link.label}
+              </Link>
+            ))}
             {/* Your CTA on small screens */}
             <div className="flex flex-col">{cta}</div>
           </div>
