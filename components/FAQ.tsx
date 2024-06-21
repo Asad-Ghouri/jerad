@@ -14,7 +14,7 @@ interface FAQItemProps {
 const faqList: FAQItemProps[] = [
   {
     question: "What it is a Loop?",
-    answer: <div className="space-y-2 leading-relaxed">The first thing that you will learn in our platform is the "Loop". Find more about what we call a loop</div>,
+    answer: <div className="space-y-2 leading-relaxed">The first thing that you will learn in our platform is the Loop. Find more about what we call a loop</div>,
   },
   {
     question: "Is there any limit on the number of applications?",
@@ -45,7 +45,7 @@ const faqList: FAQItemProps[] = [
   {
     question: "How can I see my daily results?",
     answer: (
-      <div className="space-y-2 leading-relaxed">To see your daily job applications and email sent, you can either go in your overview tab or check each loop’s (each job search) results.</div>
+      <div className="space-y-2 leading-relaxed">To see your daily job applications and email sent, you can either go in your overview tab or check each loops (each job search) results.</div>
     ),
   },
 ];
